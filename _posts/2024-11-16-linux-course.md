@@ -15,7 +15,7 @@ author: <author_id>
 >Linux like Foundation and Structure of the House.
 {: .prompt-info}
  
-![Desktop View](/stucture-fondation-analogy.webp){: width="1200" height="600" }
+![Desktop View](/structure-fondation-analogy.webp){: width="1200" height="600" }
 
 ### **The Linux Kernel(The Heart of Linux)**
 
