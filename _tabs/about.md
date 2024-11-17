@@ -21,7 +21,5 @@ order: 4
 * Cryptography
 
 
-                        Badges 🎖️
-<div>
-    <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2767317" style='border:none;'></iframe>
-</div>
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2767317" style='border:none;'></iframe>
+
