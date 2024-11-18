@@ -55,7 +55,7 @@ Let's see the code source of the pages you can use inspector in the web browser 
 
 ![Desktop View](/source-code.webp){: width="1200" height="450" }
 
-{% include embed/video.html src='/explained-video.mp4' % loop=true}
+{% include embed/video.html src='/explained-video.mp4' loop=true %}
 
 ## **WebPage Enumeration**
 
