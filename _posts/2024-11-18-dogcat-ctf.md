@@ -2,7 +2,7 @@
 title: "DogCat CTF"
 image: /room_image.webp
 categories: [CTFs ,Tryhackme]
-tags: []
+tags: [tryhackme ,local file inclusion ,docker ,privilege escalation ,nmap ,whatweb ]
 media_subpath: /images/dogcat-ctf
 author: <author_id>
 ---
