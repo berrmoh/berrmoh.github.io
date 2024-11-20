@@ -304,7 +304,8 @@ orville@Backtrack:/$ export TERM=xterm
 export TERM=xterm
 orville@Backtrack:/$ ^Z
 zsh: suspended  nc -lnvp 9001
-                                                                                                     $stty raw -echo; fg
+
+$stty raw -echo; fg
 [1]  + continued  nc -lnvp 9001
 
 orville@Backtrack:/$ cd /home/orville && ls
