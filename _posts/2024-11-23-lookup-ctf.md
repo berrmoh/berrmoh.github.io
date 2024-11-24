@@ -1,5 +1,5 @@
 ---
-title: "lookup CTF"
+title: "Lookup CTF"
 image: /room_image.webp
 categories: [CTFs ,Tryhackme]
 tags: [brute force, ffuf, vhost, path hijacking, suid, ssh, hydra]
