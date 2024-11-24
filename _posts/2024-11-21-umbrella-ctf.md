@@ -62,7 +62,7 @@ PORT     STATE SERVICE VERSION
 ```
 10.10.165.140   umbrella.thm
 ```
-{: file=/etc/hosts}
+{: file="/etc/hosts"}
 
 
 ### port 5000
@@ -140,6 +140,7 @@ $ curl -s http://umbrella.thm:5000/v2/umbrella/timetracking/manifests/latest | j
     ......
     ......
 ```
+
 ENV DB_DATABASE=timetracking
 ENV DB_PASS=**************
 ENV DB_USER=root
