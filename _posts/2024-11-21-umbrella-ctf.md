@@ -2,7 +2,7 @@
 title: "Umbrella CTF"
 image: /room_image.webp
 categories: [CTFs ,Tryhackme]
-tags: [Docker, database, sql, hash, RCE, pivot, suid, ]
+tags: [Docker, database, sql, hash, RCE, pivot, suid, nmap]
 media_subpath: /images/umbrella-ctf
 author: <author_id>
 ---
@@ -10,6 +10,7 @@ During our assessment of **Umbrella**'s infrastructure, we identified an exposed
 
 Further enumeration revealed a containerized web application with a volume mounted to the host. By analyzing the application’s source code within the container, we identified and exploited a **remote code execution** (RCE) vulnerability, escalating our privileges to a root shell within the container. To **pivot** further, we exploited the mounted host volume by crafting a custom **SUID** binary from within the container. Executing this binary on the host system provided a root-level shell, effectively compromising the host machine.
 
+----
 
 ## **Enumeration - Nmap Scan**
 
@@ -57,10 +58,12 @@ PORT     STATE SERVICE VERSION
 
 ## Overview of services
 
+
 ```
 10.10.165.140   umbrella.thm
 ```
 {: file=/etc/hosts}
+
 
 ### port 5000
 Port 5000 returns an empty HTTP response.

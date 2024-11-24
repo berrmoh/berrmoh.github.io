@@ -13,4 +13,7 @@ penetration tester, I specialize in identifying and addressing vulnerabilities w
 In my free time, I am constantly exploring new technology trends, diving deeper into advanced mathematical concepts, or solving challenging problems. This continuous pursuit of knowledge keeps me ahead of the curve and fuels my enthusiasm for discovering innovative solutions in both cybersecurity and mathematics.
 
 
+<div>
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2767317" style='border:none;'></iframe>
+</div>
 
