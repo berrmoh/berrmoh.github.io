@@ -13,6 +13,5 @@ penetration tester, I specialize in identifying and addressing vulnerabilities w
 In my free time, I am constantly exploring new technology trends, diving deeper into advanced mathematical concepts, or solving challenging problems. This continuous pursuit of knowledge keeps me ahead of the curve and fuels my enthusiasm for discovering innovative solutions in both cybersecurity and mathematics.
 
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/DRCPAP.png" alt="Your Image Badge" />
 
-
+[![DRCPAP Badge](https://tryhackme-badges.s3.amazonaws.com/DRCPAP.png)](https://tryhackme.com/r/p/DRCPAP){: .center }
